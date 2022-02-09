@@ -10,6 +10,7 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
+#        dialect: org.hibernate.dialect.Oracle10gDialect <- 이런식으로 DB를 쉽게 변경가능
 #        show_sql: true # sql문을 콘솔에 남긴다.
         format_sql: true # format에 맞춰 예쁘게 나오게 해줌
 
