@@ -30,7 +30,7 @@ import java.util.*;
  * - LIMIT: findFirst3, findFirst, findTop, findTop3
  * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.limit-query-result
  */
-public interface MemberRepository extends JpaRepository<Member, Long> {
+public interface MemberRepository extends JpaRepository<Member, Long>, MemberRepositoryCustom {
     /**
      * - 간단한 쿼리일 때 사용 권장
      * - parameter가 3개이상 되면 메서드명이 너무 길어지는 단점이 있으므로 parameter가 많아지거나
