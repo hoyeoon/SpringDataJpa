@@ -12,7 +12,7 @@ import javax.persistence.*;
         name="Member.findByUsername",
         query="select m from Member m where m.username = :username"
 ) // 장점 : 애플리케이션 로딩시점에 쿼리를 파싱하여 JPQL을 SQL로 만드는 과정에서 문법 오류가 있으면 알려준다.
-public class Member {
+public class Member extends BaseEntity {
 
     @Id @GeneratedValue
     @Column(name = "member_id")
