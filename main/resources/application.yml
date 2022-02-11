@@ -14,6 +14,12 @@ spring:
 #        show_sql: true # sql문을 콘솔에 남긴다.
         format_sql: true # format에 맞춰 예쁘게 나오게 해줌
 
+  # Pageable 글로벌 설정 세팅
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
 logging.level:
   org.hibernate.SQL: debug  # sql문을 콘솔에 남기는게 아니라 log 파일로 남긴다.
 #  org.hibernate.type: trace # 바인딩 된 파라미터까지 볼 수 있다.(지저분할 수 있음)
